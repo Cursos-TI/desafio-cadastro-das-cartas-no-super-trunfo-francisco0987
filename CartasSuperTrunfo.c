@@ -20,15 +20,16 @@ int main() {
     int n_pontos_turisticos2; // numero de pontos turísticos
 
     printf("SEJA BEM VINDO AO SUPER TRUNFO!\n");
-    printf("Nesse jogo você poderar cadastra uma cidade, sua população, aréa em km², PIB, e números de pontos turisticos.\n");
+    printf("Nesse jogo você poderá cadastrar uma cidade, sua população, área em km², PIB e número de pontos turísticos.\n\n");
 
     // Cadastrando dados da carta número 1
     printf("Vamos cadastrar nossa primeira carta.\n");
+    
     printf("Digite a letra do seu estado: \n");
-    scanf("%c", &estado1);
+    scanf(" %c", &estado1);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &nome_cidade1);
+    scanf("%s", nome_cidade1);
 
     printf("Qual a população da cidade? \n");
     scanf("%d", &populacao1);
@@ -36,7 +37,7 @@ int main() {
     printf("Área da cidade em km²: \n");
     scanf("%f", &area1);
 
-    printf("Qual o PIB da cidade: \n");
+    printf("Qual o PIB da cidade (em bilhões de reais)? \n");
     scanf("%f", &pib1);
 
     printf("Número de pontos turísticos da cidade: \n\n");
@@ -56,12 +57,11 @@ int main() {
     // Cadastrando dados da carta número 2
     printf("Vamos cadastrar nossa segunda carta.\n");
 
-    printf("Digite o nome da cidade: \n");
-    scanf("%s", &nome_cidade2);
-
-    // OBS: O caracter da letra aparece vazio, não conseguir resolver
     printf("Digite a letra do seu estado: \n");
-    scanf("%c", &estado2);
+    scanf(" %c", &estado2); // adicionar um espaço antes '%c' para remover o \n do buffer
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", nome_cidade2);
 
     printf("Qual a população da cidade? \n");
     scanf("%d", &populacao2);
@@ -69,7 +69,7 @@ int main() {
     printf("Área da cidade em km²: \n");
     scanf("%f", &area2);
 
-    printf("Qual o PIB da cidade: \n");
+    printf("Qual o PIB da cidade (em bilhões de reais)? \n");
     scanf("%f", &pib2);
 
     printf("Número de pontos turísticos da cidade: \n");
@@ -87,4 +87,3 @@ int main() {
 
     return 0;
 }
-
