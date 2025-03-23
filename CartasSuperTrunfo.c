@@ -92,7 +92,7 @@ int main() {
 
     // Calculando o PIB per capta da cidade
     // pib1 * 1000000000 converte de bilões para reais
-    pib_per_capta1 = (pib2 * 1000000000) / populacao2;
+    pib_per_capta2 = (pib2 * 1000000000) / populacao2;
 
     // Exibindo dados da carta número 2
     printf("Carta 2: \n");
